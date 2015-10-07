@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+	<name>PLG_CONTENT_STOREPAPERS</name>
+	<author>Francisco Ruiz</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>This edition of StorePapers is released under the GNU/GPL License Version 3.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GPL</license>
+	<authorEmail>contact@storepapers.com</authorEmail>
+	<authorUrl>http://www.storepapers.com</authorUrl>
+	<version>1.5</version>
+	<description>PLG_CONTENT_STOREPAPERS_DESCRIPTION</description>
+	
+	<files>		
+		<filename>index.html</filename>		
+		<filename plugin="storepapers">storepapers.php</filename>		
+	</files>	
+	
+	<languages folder="admin">		
+		<language tag="en-GB">language/en-GB.plg_content_storepapers.sys.ini</language>			
+		<language tag="es-ES">language/es-ES.plg_content_storepapers.sys.ini</language>		
+		<language tag="fr-FR">language/fr-FR.plg_content_storepapers.sys.ini</language>
+		<language tag="it-IT">language/it-IT.plg_content_storepapers.sys.ini</language>		
+	</languages>	
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">									
+				<field name="spacer01" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_NAME"/>								
+				<field name="spacer02" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_DESC"/>
+				<field name="spacer03" type="spacer" hr="true"/>				
+				<field name="spacer04" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_1_1"/>				
+				<field name="spacer05" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_1_2"/>
+				<field name="spacer06" type="spacer" hr="true"/>
+				<field name="spacer07" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_2_1"/>				
+				<field name="spacer08" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_3_CODIGO_1"/>
+				<field name="spacer09" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_3_CODIGO_2"/>
+				<field name="spacer10" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_4_CODIGO_1"/>
+				<field name="spacer11" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_4_CODIGO_2"/>
+				<field name="spacer12" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_5_CODIGO_1"/>
+				<field name="spacer13" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_5_CODIGO_2"/>
+				<field name="spacer14" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_6_CODIGO_1"/>
+				<field name="spacer15" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_6_CODIGO_2"/>
+				<field name="spacer16" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_7_CODIGO_1"/>
+				<field name="spacer17" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_7_CODIGO_2"/>
+				<field name="spacer18" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_8_CODIGO_1"/>
+				<field name="spacer19" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_8_CODIGO_2"/>
+				<field name="spacer20" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_9_CODIGO_1"/>
+				<field name="spacer21" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_9_CODIGO_2"/>
+				<field name="spacer22" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_10_CODIGO_1"/>
+				<field name="spacer23" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_10_CODIGO_2"/>
+				<field name="spacer22" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_11_CODIGO_1"/>
+				<field name="spacer23" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_11_CODIGO_2"/>
+				<field name="spacer24" type="spacer" hr="true"/>
+				<field name="spacer25" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_11"/>
+				<field name="spacer26" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_12_OPCION_1"/>
+				<field name="spacer27" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_12_OPCION_2"/>
+				<field name="spacer28" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_13_OPCION_1"/>
+				<field name="spacer29" type="spacer" class="text" label="PLG_CONTENT_STOREPAPERS_MANUAL_LINEA_13_OPCION_2"/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="class_ul" type="text"
+					default=""
+					description="PLG_CONTENT_STOREPAPERS_CLASS_UL_DESC"
+					label="PLG_CONTENT_STOREPAPERS_CLASS_UL_LABEL"
+					size="35"
+				/>
+				
+				<field name="class_ol" type="text"
+					default=""
+					description="PLG_CONTENT_STOREPAPERS_CLASS_OL_DESC"
+					label="PLG_CONTENT_STOREPAPERS_CLASS_OL_LABEL"
+					size="35"
+				/>
+				
+				<field name="order_publication" type="radio"
+					default="0"
+					description="PLG_CONTENT_STOREPAPERS_ORDER_PUBLICATION_DESC"
+					label="PLG_CONTENT_STOREPAPERS_ORDER_PUBLICATION_LABEL"
+					>
+					<option value="0">PLG_CONTENT_STOREPAPERS_BY_TITLE</option>
+					<option value="1">PLG_CONTENT_STOREPAPERS_BY_AUTHOR</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
